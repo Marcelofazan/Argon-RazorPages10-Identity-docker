@@ -1,48 +1,46 @@
 ## CreativeTim-Razor10-docker
+Exemplo de renderização CreativeTim em C# ASP.NET Core 10 com banco de dados Postgres.
 
+VSCode Terminal [1]
+```bash
 cd CreativeTim.Argon.DotNetCore.Free
 dotnet restore
 dotnet build
 dotnet ef migrations add InitialCreate
-
-
-VSCode Terminal [1]
-
-- Iniciar Docker
-```bash
 docker-compose up --build  
 ```
 
 VSCode Terminal [2]
-
-- Realizar Migrations 
 ```bash
 cd CreativeTim.Argon.DotNetCore.Free
 dotnet ef database update 
 ```
 
 VSCode Terminal [3]
-
 - Fechar Container
 ```bash
 docker-compose down 
 ```
 
-https://localhost:44308/
+A aplicação ficará disponivel em **https://localhost:44308/**
 
-
-# 1. Garante que a pasta existe no seu Windows
+#### 💬 Requisitos do Projeto
+- 1. Garante que a pasta existe no seu Windows
+```bash
 mkdir -Force "$env:USERPROFILE\.aspnet\https"
-
-# 2. Limpa resquícios de certificados antigos
+```
+- 2. Limpa resquícios de certificados antigos
+```bash
 dotnet dev-certs https --clean
-
-# 3. Cria um novo certificado confiável no Windows
+```
+- 3. Cria um novo certificado confiável no Windows
+```bash
 dotnet dev-certs https --trust
-
-# 4. Exporta o arquivo PFX com uma senha padrão para a pasta correta
+```
+- 4. Exporta o arquivo PFX com uma senha padrão para a pasta correta
+```bash
 dotnet dev-certs https -ep "$env:USERPROFILE\.aspnet\https\argonapp.pfx" -p "CrypticPassword99!"
-
+```
 
 
 docker exec -it argon-dashboard-asp-net-master-db-1 psql -U postgres

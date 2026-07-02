@@ -1,6 +1,11 @@
 ## CreativeTim-Razor10-docker
 Exemplo de renderização CreativeTim em C# ASP.NET Core 10 com banco de dados Postgres.
 
+#### 📋 O que voçê vai ver nesse Projeto
+| Tecnologia | Descrição |
+|-----------|-----------|
+| **Identity** | Serviços de autenticação, autorização e gerenciamento de acessos,  garantindo que apenas as pessoas e entidades autorizadas acessem recursos e dados |
+ 
 VSCode Terminal [1]
 ```bash
 cd CreativeTim.Argon.DotNetCore.Free

@@ -119,7 +119,7 @@ DROP DATABASE "creativeTim";
 
 
 #### 💡 Relação tabelas Identity ASPNET da Microsoft 
-| Tecnologia | Descrição |
+| Tabela | Descrição |
 |-----------|-----------|
 | **AspNetRoles** |  Armazena os papéis/perfis de acesso (ex: Admin, Usuário). |
 | **AspNetUsers** |  Armazena os dados dos usuários cadastrados. |

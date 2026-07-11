@@ -143,3 +143,5 @@ dotnet dev-certs https --trust
 dotnet dev-certs https -ep "$env:USERPROFILE\.aspnet\https\argonapp.pfx" -p "CrypticPassword99!"
 ```
 
+OBS: Confira na pasta **C:\Users\[SEU_USUARIO_WINDOWS]\.aspnet\https** o certificado gerado na maquina.
+

@@ -92,7 +92,7 @@ Para verificar se a database **creativeTim** está no docker acesse o banco com 
 | **Local** | Server=localhost |
 | **Docker** | Host=db ou Server=db |
 
-VSCode Terminal [4]
+VSCode Terminal [3]
 ```bash 
 docker exec -it argon-dashboard-asp-net-master-db-1 psql -U postgres
 \l
